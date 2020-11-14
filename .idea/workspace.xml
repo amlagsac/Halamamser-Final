@@ -10,15 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b9cf5ce-95c3-4450-bab8-c2fe875a5580" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Halamamser-Final.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dbf07c95-08fe-458c-9724-30e0e8fdd896.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dbf07c95-08fe-458c-9724-30e0e8fdd896/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e6e1e38-9909-4235-a26c-b6f19e57436a.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e6e1e38-9909-4235-a26c-b6f19e57436a/storage_v2/_src_/database/ENTJAVA.bVHqyw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e6e1e38-9909-4235-a26c-b6f19e57436a/storage_v2/_src_/database/ENTJAVA.bVHqyw/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e6e1e38-9909-4235-a26c-b6f19e57436a/storage_v2/_src_/database/ENTJAVA.bVHqyw/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/68ca0dcf-0783-490e-8c6a-eec8d987908b.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/68ca0dcf-0783-490e-8c6a-eec8d987908b/storage_v2/_src_/database/ENTJAVA_HALAMAMSER.J4weYQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/68ca0dcf-0783-490e-8c6a-eec8d987908b/storage_v2/_src_/database/ENTJAVA_HALAMAMSER.J4weYQ/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/68ca0dcf-0783-490e-8c6a-eec8d987908b/storage_v2/_src_/database/ENTJAVA_HALAMAMSER.J4weYQ/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a7b7684e-f44f-4d2d-b7d5-a5609027dcd3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a7b7684e-f44f-4d2d-b7d5-a5609027dcd3/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-EJB/Halamamser-EJB.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/lib/Halamamser-EJB-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/lib/Halamamser-EJB-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/adminPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/adminPage.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/cart.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/cart.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/resources/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/resources/css/ship.css" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/resources/css/ship.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/ship.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/ship.xhtml" afterDir="false" />
     </list>
@@ -56,7 +64,6 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../agoncal-application-cdbookstore-ms-master" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -199,26 +206,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="551" y="277" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605320941652" />
+    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1605346580790">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1605346580790" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605334821195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605334821195" />
-    <state width="1024" height="207" key="GridCell.Tab.0.bottom" timestamp="1605342391647">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1605357094613">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1024" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605342391647" />
-    <state width="1024" height="207" key="GridCell.Tab.0.center" timestamp="1605342391647">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605357094613" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605319891967" />
+    <state width="845" height="163" key="GridCell.Tab.0.center" timestamp="1605357094613">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1024" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605342391647" />
-    <state width="1024" height="207" key="GridCell.Tab.0.left" timestamp="1605342391647">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605357094613" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605319891966" />
+    <state width="845" height="163" key="GridCell.Tab.0.left" timestamp="1605357094613">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1024" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605342391647" />
-    <state width="1024" height="207" key="GridCell.Tab.0.right" timestamp="1605342391647">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605357094613" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605319891966" />
+    <state width="845" height="163" key="GridCell.Tab.0.right" timestamp="1605357094613">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1024" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605342391647" />
+    <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605357094613" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605319891966" />
     <state width="1024" height="207" key="GridCell.Tab.1.bottom" timestamp="1605341620996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -243,33 +258,7 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605337626512" />
-    <state x="407" y="73" key="new project wizard" timestamp="1605329821249">
-    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1605338456852">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1605338456852" />
-    <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1605338466166">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605338466166" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605319891967" />
-    <state width="845" height="163" key="GridCell.Tab.0.center" timestamp="1605338466166">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605338466166" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605319891966" />
-    <state width="845" height="163" key="GridCell.Tab.0.left" timestamp="1605338466166">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605338466166" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605319891966" />
-    <state width="845" height="163" key="GridCell.Tab.0.right" timestamp="1605338466166">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605338466166" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605319891966" />
     <state x="407" y="73" key="new project wizard" timestamp="1605314900276">
->>>>>>> 1100d04187906cd51739764d02f9eef008f6dff7
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605329821249" />

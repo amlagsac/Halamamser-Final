@@ -108,5 +108,9 @@ a:hover{
 #amountDiv{
     max-height: 50%;
     align-content: flex-start;
+}
 
+.btn-primary{
+    background-color: #273B09;
+    border-color: #273B09;
 }
