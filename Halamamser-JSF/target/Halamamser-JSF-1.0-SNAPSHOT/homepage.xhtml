@@ -76,13 +76,17 @@
     <div class="row container-fluid">
         <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
         <div class="col-lg-3 col-md-4 col-6" >
+            <h:dataTable value="#{homepageItemFormBean.items}" var="item">
+                <h:column>
+                    <h3><h:outputLabel value="#{item.name}" /></h3>
+                    <h5><h:outputLabel value="#{item.price}" /></h5>
+                </h:column>
+            </h:dataTable>
             <img class="img-fluid img-thumbnail" src="resources/image/CalatheaPeacock.JPG" alt=""/>
-            <h3>Calathea Peacock</h3>
-            <h5>₱ 200</h5>
+
             <a href="#" class="d-block mb-4 h-100" id="product1">
                 <button type="submit" class="btn btn-primary">Add to Cart</button>
             </a>
-
         </div>
         <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
     </div><!-- end div row1 "plants"-->

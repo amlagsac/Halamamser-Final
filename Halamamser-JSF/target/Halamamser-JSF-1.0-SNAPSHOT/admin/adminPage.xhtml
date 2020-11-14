@@ -124,33 +124,34 @@
 
     <!--Create new product-->
     <div class="container" id="create-new-product-container">
-        <form>
+        <h:form id="item-form">
             <div class="form-group row">
                 <label for="inputProductName" class="col-sm-6 col-form-label" style="text-align: center;">Product name</label>
                 <div class="col-sm-5">
-                    <h:inputText id="inputProductName" styleClass="form-control" a:placeholder="Enter product name" required="true" requiredMessage="Please enter product name"/>
+                    <h:inputText value="#{homepageItemFormBean.item.name}" id="inputProductName" styleClass="form-control" a:placeholder="Enter product name" required="true" requiredMessage="Please enter product name"/>
                     <h:message for="inputProductName" errorStyle="color:red; display:inline-block"></h:message>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="inputProductAmount" class="col-sm-6 col-form-label" style="text-align: center;">Product amount</label>
                 <div class="col-sm-5">
-                    <h:inputText id="inputProductAmount" styleClass="form-control" a:placeholder="Enter product amount" required="true" requiredMessage="Please enter product amount"/>
+                    <h:inputText value="#{homepageItemFormBean.item.price}" id="inputProductAmount" styleClass="form-control" a:placeholder="Enter product amount" required="true" requiredMessage="Please enter product amount"/>
                     <h:message for="inputProductAmount" errorStyle="color:red; display:inline-block"></h:message>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="addProductImage" class="col-sm-6 col-form-label" style="text-align: center;">Add image</label>
-                <div class="col-sm-5">
-<!--                    <input type="file" id="addProductImage" name="filename"/>-->
-                    <h:inputFile id="addProductImage" required="true" requiredMessage="Please add product image"/>
-                    <h:message for="addProductImage" errorStyle="color:red; display:inline-block"></h:message>
-                </div>
-            </div>
+<!--            <div class="form-group row">-->
+<!--                <label for="addProductImage" class="col-sm-6 col-form-label" style="text-align: center;">Add image</label>-->
+<!--                <div class="col-sm-5">-->
+<!--&lt;!&ndash;                    <input type="file" id="addProductImage" name="filename"/>&ndash;&gt;-->
+<!--                    <h:inputFile id="addProductImage" required="true" requiredMessage="Please add product image"/>-->
+<!--                    <h:message for="addProductImage" errorStyle="color:red; display:inline-block"></h:message>-->
+<!--                </div>-->
+<!--            </div>-->
             <div style="text-align: center;">
-                <button type="submit" class="btn btn-primary custom-btn" id="login">Add product</button>
+                <h:commandButton styleClass="btn btn-primary custom-btn" value="Submit" action="#{homepageItemFormBean.addItem()}"/>
+<!--                <button type="submit" class="btn btn-primary custom-btn" id="login">Add product</button>-->
             </div>
-        </form>
+        </h:form>
     </div>
 
 </div>
