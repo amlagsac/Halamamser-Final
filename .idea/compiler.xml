@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Halamamser-Modular-Final" />
         <module name="Halamamser-JSF" />
         <module name="Halamamser-EJB" />
       </profile>
