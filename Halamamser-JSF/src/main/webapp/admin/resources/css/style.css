@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 80px;
+    /* height: 100px; */
+    /* align-content: center; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 10px;
+    grid-gap: 15px;
+    background-color: none;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+    color: #F9F8F8;
+    border-radius: 10px;
+    box-shadow: 5px 2px 2px rgba(0,0,0,0.3);
+}
+
+.view-all-products{
+    background: #896978;
+    transition: 0.3s;
+    padding: 30px 10px;
+}
+
+.view-all-orders {
+    background: #AAC0AF;
+    transition: 0.3s;
+    padding: 30px 10px;
+}
+
+.create-new-product {
+    background: #839791;
+    transition: 0.3s;
+    padding: 30px 10px;
+}
+
+.view-all-products:hover, .view-all-orders:hover, .create-new-product:hover{
+    background: #CDD3CE;
+    color: black;
+    cursor:context-menu;
+}
+
+.view-all-products-active {
+    background: #896978;
+    display: none;
+}
+
+.view-all-orders-active {
+    background: #AAC0AF;
+    display: none;
+}
+
+.create-new-product-active {
+    background: #839791;
+    display: none;
+}
+
+#view-all-products-table, #view-all-orders-table {
+    margin-top: 50px;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.delete {
+    width: 20px;
+    transition: 0.3s;
+}
+
+
+
+#view-all-products-container, #view-all-orders-container{
+    background-color:whitesmoke;
+    border-radius: 10px;
+    display: none;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#create-new-product-container {
+    background-color:whitesmoke;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 500px;
+    display: none;
+    font-size: 20px;
+}
+
+.btn-primary.custom-btn {
+    background-color: #273B09;
+    border-color: #273B09;
+}
+
+#active-label {
+    border-radius: 10px;
+    margin-top: -25px;
+    max-height: 5px;
+    max-width: 1090px;
+    display: none;
+}

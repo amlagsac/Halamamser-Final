@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+a {
+    color: black;
+}
+
+#inputs:hover {
+    color: #526760;
+    cursor:context-menu;
+}
+
+#inputLogin {
+    background-color: white;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+#inputSignup,#inputSignup2,#inputSignup3,#inputSignup4  {
+    background-color: white;
+    max-width: 500px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#selectUserRoleLogin {
+    /* background-color: white; */
+    max-width: 500px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#selectUserRoleSignup {
+    /* background-color: white; */
+    max-width: 500px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    max-width: 300px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.btn-primary.custom-btn, .btn{
+    background-color: #273B09;
+    border-color: #273B09;
+}
+
+h1,h2{
+    text-align: center; margin-top: 20px;
+}
+
+#inputSignup{
+    margin-top: 30px;
+}
+
+form{
+    font-size: 20px;
+}
+
+.form-group{
+    text-align: center;
+}
+
+#confirm{
+    margin: 10px;
+}
+
+.img-responsive{
+    max-height: 100px;
+    margin-top: 0px;
+    margin-left: 40%;
+    margin-right: 50%;
+}
