@@ -63,9 +63,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="cart.xhtml">Cart</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="order.xhtml">Order Details</a>
-            </li>
+
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -85,19 +83,26 @@
             <h6 id="total1">Total number of items: </h6>
             <!--start: dito ka mag edit ANDRE SA PRODUCTS-->
             <div class="row">
-                <div class="col-md-3"><!-- for image -->
-                    <img src="resources/image/pots.jpg" alt="..." class="img-thumbnail"/>
-                </div>
-                <div class="col-md-4"><!-- for details -->
-                    <h4>Name of product</h4>
-                    <br/><br/>
-                    <h3>₱ 200</h3>
-                    <a href=""><img src="resources/image/delete.png" id="delete"/> Remove item</a>
-                </div>
+<!--                <div class="col-md-3">&lt;!&ndash; for image &ndash;&gt;-->
+<!--                    <img src="resources/image/pots.jpg" alt="..." class="img-thumbnail"/>-->
+<!--                </div>-->
+                <ui:repeat value="#{homepageItemFormBean.items}" var="item" >
+                    <div class="col-md-3">
+                        <h:graphicImage url="resources/image/plant.jpg" style="width: 150px; height:150px" />
+                    </div>
+                    <div class="col-md-4"><!-- for details -->
+                        <h4><h:outputText value="#{item.name}" /></h4>
+                        <h4><h:outputText value="#{item.category}" /></h4>
+                        <br/><br/>
+                        <h3>₱<h:outputText value="#{item.price}" /></h3>
+                        <a href=""><img src="resources/image/delete.png" id="delete"/> Remove item</a>
+                    </div>
+                </ui:repeat>
+
                 <div class="col-md-4"><!-- for quantity and amount -->
                     <form action="/" id="quantityBox">
                         <label for="quantity">Quantity</label>
-                        <input type="number" name="quantity" class="form-control" id="quantity" value="1"/>
+                        <input type="number" name="quantity" class="form-control" id="quantity" value="1" disabled="disabled"/>
                     </form>
                 </div>
             </div>
@@ -118,12 +123,18 @@
                 </div>
                 <div class="col-4" id="peso">
                     <br/><br/>
-                    <h6>₱ 200</h6>
-                    <h6>₱ 50</h6>
+                    <h6>₱<h:outputText value="#{homepageItemFormBean.item.price}" /></h6>
+                    <h6><h:outputText value="₱ 50" /></h6>
                     <hr/>
-                    <h6 id="total">₱ 50</h6>
+                    <h6 id="total">₱<h:outputText value="#{homepageItemFormBean.item.newPrice}" /></h6>
                 </div>
             </div>
+
+            <div class="row" style="margin-left: 250px; margin-top: 50px">
+                <a href="ship.xhtml" class="btn btn-light btn-lg active" role="button" >Checkout
+                </a>
+            </div>
+
 
         </div>
         <!-- amount summary end -->

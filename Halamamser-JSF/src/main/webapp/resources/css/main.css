@@ -5,7 +5,10 @@ body {
     background-color: #f9f9f0;
 }
 
-
+.btn-primary.custom-btn, .btn{
+    background-color: #273B09;
+    border-color: #273B09;
+}
 #div_id{
     justify-content: left;
     margin: 0;

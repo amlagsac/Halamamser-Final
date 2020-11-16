@@ -25,7 +25,7 @@ public class HomepageItemFormBean implements Serializable {
 
     public String addItem() {
         int id = (this.homepageLocal.getItems().size() + 1);
-        this.homepageLocal.addItem(new HomepageItem(this.item.getName(), this.item.getPrice(), this.item.getCategory()));
+        this.homepageLocal.addItem_Cart(new HomepageItem(this.item.getName(), this.item.getPrice(), this.item.getCategory()));
         this.homepageLocal.getItems().stream().forEach((item) -> {
             System.out.println(item.toString());
         });

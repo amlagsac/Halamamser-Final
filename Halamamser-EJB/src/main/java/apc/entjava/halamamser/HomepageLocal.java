@@ -8,5 +8,5 @@ public interface HomepageLocal {
 
     public List<HomepageItem> getItems();
 
-    public void addItem(HomepageItem item);
+    public void addItem_Cart(HomepageItem item);
 }

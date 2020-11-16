@@ -65,7 +65,7 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
@@ -76,23 +76,53 @@
     <div class="row container-fluid" id="plantsTitle">
         <h1>PLANTS</h1>
     </div>
+    <!-- dito ka lagay ng hahardcode -->
+   <!-- <ui:repeat value="plant1" var="item">-->
+    <div class="row container-fluid">
+        <div class="col-lg-3 col-md-4 col-6" >
+            <div style="text-align: center;">
+                <h:inputHidden ><h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/></h:inputHidden>
+                <h3>Name: <h:outputLabel value="plant2" /></h3>
+                <h:inputHidden id="plant2" value="plant2"></h:inputHidden>
+                <h5>Price: ₱<h:outputLabel value="400" /></h5>
+                <h:inputHidden id="price2" value="400"></h:inputHidden>
+                <!--<button type="submit" class="btn btn-primary">Add to Cart</button>-->
+                <h:commandLink action="#{cartFormBeam.addCartItem}" styleClass="btn btn-primary" value="Buy" />
+            </div>
+        </div>
+
+    <div class="col-lg-3 col-md-4 col-6" >
+        <div style="text-align: center;">
+            <h:inputHidden ><h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/></h:inputHidden>
+            <h3>Name: <h:outputLabel value="plant1" /></h3>
+            <h:inputHidden id="name1" value="plant1"></h:inputHidden>
+            <h5>Price: ₱<h:outputLabel value="200" /></h5>
+            <h:inputHidden id="price1" value="200"></h:inputHidden>
+            <!--<button type="submit" class="btn btn-primary">Add to Cart</button>-->
+            <h:commandLink action="#{cartFormBeam.addCartItem}" styleClass="btn btn-primary" value="Buy" />
+        </div>
+        </div>
+    </div>
+   <!-- </ui:repeat>-->
+
+    <!--end-->
     <div class="row container-fluid">
         <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
             <ui:repeat value="#{homepageItemFormBean.items}" var="item">
                 <div class="col-lg-3 col-md-4 col-6" >
                     <div style="text-align: center;">
-                        <h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/>
-                        <h3>Name: <h:outputLabel value="#{item.name}" /></h3>
-                        <h3>Category: <h:outputLabel value="#{item.category}" /></h3>
-                        <h5>Price: ₱<h:outputLabel value="#{item.price}" /></h5>
+                        <h:inputHidden value="100"><h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/></h:inputHidden>
+                        <h:inputHidden value="#{cartFormBeam.item.name}" /><h3>Name: <h:outputLabel value="plant1" /></h3>
+                        <h5>Price: ₱<h:outputLabel value="200" /></h5>
 <!--                            <button type="submit" class="btn btn-primary">Add to Cart</button>-->
-                        <h:commandButton styleClass="btn btn-primary" action="cart" value="Add to Cart" />
+                        <h:commandLink action="#{cartFormBeam.addCartItem}" styleClass="btn btn-primary" value="Add to Cart" >
+                            <f:param name="itemId" value="#{homepageItemFormBean.item.itemId}"/>
+                        </h:commandLink>
                     </div>
                 </div>
             </ui:repeat>
         <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
     </div><!-- end div row1 "plants"-->
-
 </div>
 <script type="text/javascript" src="js/homepage.js"></script>
 </body>

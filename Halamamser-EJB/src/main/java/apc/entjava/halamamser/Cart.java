@@ -1,5 +1,6 @@
 package apc.entjava.halamamser;
 
+
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -8,18 +9,18 @@ import java.util.List;
 
 @Stateless
 @LocalBean
-public class Homepage implements HomepageLocal {
+public class Cart implements CartLocal {
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    public List<HomepageItem> getItems() {
-        return this.entityManager.createQuery("SELECT P FROM HomepageItem P ORDER BY P.category ASC", HomepageItem.class).getResultList();
+    public List<CartItem> getItem_Cart() {
+        return this.entityManager.createQuery("SELECT C FROM CartItem C", CartItem.class).getResultList();
     }
 
     @Override
-    public void addItem_Cart(HomepageItem item) {
+    public void addItem(CartItem item) {
         this.entityManager.persist(item);
     }
 }
