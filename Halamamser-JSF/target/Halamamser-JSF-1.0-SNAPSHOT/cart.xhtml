@@ -83,28 +83,28 @@
             <h6 id="total1">Total number of items: </h6>
             <!--start: dito ka mag edit ANDRE SA PRODUCTS-->
             <div class="row">
-<!--                <div class="col-md-3">&lt;!&ndash; for image &ndash;&gt;-->
-<!--                    <img src="resources/image/pots.jpg" alt="..." class="img-thumbnail"/>-->
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Product name</th>
+                        <th>Product price</th>
+                    </tr>
+                    </thead>
+                    <ui:repeat value="#{cartFormBeam.items_Cart}" var="item">
+                        <tbody>
+                        <tr>
+                            <td><h:outputText value="#{item.name}" /></td>
+                            <td>₱<h:outputText value="#{item.price}" /></td>
+                        </tr>
+                        </tbody>
+                    </ui:repeat>
+                </table>
+<!--                <div class="col-md-4">&lt;!&ndash; for quantity and amount &ndash;&gt;-->
+<!--                    <form action="/" id="quantityBox">-->
+<!--                        <label for="quantity">Quantity</label>-->
+<!--                        <input type="number" name="quantity" class="form-control" id="quantity" value="1" disabled="disabled"/>-->
+<!--                    </form>-->
 <!--                </div>-->
-                <ui:repeat value="#{homepageItemFormBean.items}" var="item" >
-                    <div class="col-md-3">
-                        <h:graphicImage url="resources/image/plant.jpg" style="width: 150px; height:150px" />
-                    </div>
-                    <div class="col-md-4"><!-- for details -->
-                        <h4><h:outputText value="#{item.name}" /></h4>
-                        <h4><h:outputText value="#{item.category}" /></h4>
-                        <br/><br/>
-                        <h3>₱<h:outputText value="#{item.price}" /></h3>
-                        <a href=""><img src="resources/image/delete.png" id="delete"/> Remove item</a>
-                    </div>
-                </ui:repeat>
-
-                <div class="col-md-4"><!-- for quantity and amount -->
-                    <form action="/" id="quantityBox">
-                        <label for="quantity">Quantity</label>
-                        <input type="number" name="quantity" class="form-control" id="quantity" value="1" disabled="disabled"/>
-                    </form>
-                </div>
             </div>
             <!--start: dito ka mag edit ANDRE SA PRODUCTS-->
 
@@ -123,10 +123,10 @@
                 </div>
                 <div class="col-4" id="peso">
                     <br/><br/>
-                    <h6>₱<h:outputText value="#{homepageItemFormBean.item.price}" /></h6>
+                    <h6>₱<h:outputText value="#{cartFormBeam.total}" /></h6>
                     <h6><h:outputText value="₱ 50" /></h6>
                     <hr/>
-                    <h6 id="total">₱<h:outputText value="#{homepageItemFormBean.item.newPrice}" /></h6>
+                    <h6 id="total">₱<h:outputText value="#{cartFormBeam.total2}" /></h6>
                 </div>
             </div>
 

@@ -21,13 +21,28 @@ public class CartFormBeam implements Serializable {
 
     public String addCartItem() {
         int id = (this.cartLocal.getItem_Cart().size() + 1);
-        this.cartLocal.addItem(new CartItem(this.item.getName(), this.item.getPrice(), this.item.getCategory()));
+        this.cartLocal.addItem(new CartItem(this.item.getName(), this.item.getPrice()));
         this.cartLocal.getItem_Cart().stream().forEach((item) -> {
             System.out.println(item.toString());
         });
         return "homepage?faces-redirect=true";
     }
 
+    public Float getTotal() {
+
+        Float total = 0f;
+
+        // Sum up the quantities
+        for (CartItem cartItem : getItems_Cart()) {
+            total += (cartItem.getPrice());
+        }
+        return total;
+    }
+
+    public Float getTotal2() {
+        Float total2 = getTotal() + 50;
+        return total2;
+    }
 
     public CartItem getItem() {
         return item;

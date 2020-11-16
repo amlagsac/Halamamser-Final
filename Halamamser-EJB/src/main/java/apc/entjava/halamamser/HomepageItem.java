@@ -20,8 +20,6 @@ public class HomepageItem {
     @Column(name="price")
     private int price;
 
-    private int newPrice;
-
     public HomepageItem() {
     }
 
@@ -64,9 +62,6 @@ public class HomepageItem {
         this.price = price;
     }
 
-    public int getNewPrice(){
-        return newPrice = price + 50;
-    }
     public String toString() {
         return "HomepageItem [itemId=" + this.itemId + ", name=" + this.name + ", price=" + this.price + ", category=" + this.category
         + "]";

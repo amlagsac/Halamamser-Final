@@ -14,19 +14,15 @@ public class CartItem {
     @Column(name="name")
     private String name;
 
-    @Column(name="category")
-    private String category;
-
     @Column(name="price")
     private int price;
 
     public CartItem() {
     }
 
-    public CartItem(String name, int price, String category) {
+    public CartItem(String name, int price) {
         super();
         this.name = name;
-        this.category = category;
         this.price = price;
     }
 
@@ -46,16 +42,26 @@ public class CartItem {
         this.name = name;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public int getPrice() {
-        return price;
+        if(name.equals("Calathea Peacock") || name.equals("Golden Pothos") || name.equals("Robust Snake Plant") ||
+        name.equals("Clay Vase") || name.equals("Groot Pot") || name.equals("White Glass Pot") ){
+            return 200;
+        }
+        else if(name.equals("Chinese Money Plant")) {
+            return 150;
+        }
+        else if(name.equals("Lucky Bamboo")) {
+            return 300;
+        }
+        else if(name.equals("Philodendron Lime Lemon")) {
+            return 250;
+        }
+        else if(name.equals("Syngonium")) {
+            return 100;
+        }
+        else {
+            return 400;
+        }
     }
 
     public void setPrice(int price) {
@@ -63,7 +69,6 @@ public class CartItem {
     }
 
     public String toString() {
-        return "HomepageItem [itemId=" + this.itemId + ", name=" + this.name + ", price=" + this.price + ", category=" + this.category
-                + "]";
+        return "HomepageItem [itemId=" + this.itemId + ", name=" + this.name + ", price=" + this.price + "]";
     }
 }

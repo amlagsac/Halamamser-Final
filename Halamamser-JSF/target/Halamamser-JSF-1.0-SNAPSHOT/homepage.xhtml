@@ -159,15 +159,24 @@
             <div class="m-0 p-0" >
                 <h3><h:outputText value="BUY PRODUCTS" /></h3>
 
-                <form class="mt-5">
+                <h:form class="mt-5">
                     <div class="form-group ">
                         <label for="inputState">Choose your product from the catalog</label>
-                        <h:selectOneMenu id="inputState" styleClass="form-control" >
-                            <f:selectItem itemValue="Choose" itemLabel="Choose" />
+                        <h:selectOneMenu id="inputState" styleClass="form-control" value="#{cartFormBeam.item.name}" >
+                            <f:selectItem itemValue="Calathea Peacock" itemLabel="Calathea Peacock"/>
+                            <f:selectItem itemValue="Chinese Money Plant" itemLabel="Chinese Money Plant"/>
+                            <f:selectItem itemValue="Clay Vase" itemLabel="Clay Vase"/>
+                            <f:selectItem itemValue="Golden Pothos" itemLabel="Golden Pothos"/>
+                            <f:selectItem itemValue="Lucky Bamboo" itemLabel="Lucky Bamboo"/>
+                            <f:selectItem itemValue="Groot Pot" itemLabel="Groot Pot"/>
+                            <f:selectItem itemValue="Phili Lime Lemon" itemLabel="philodendronlimelemon"/>
+                            <f:selectItem itemValue="Robust Snake Plant" itemLabel="Robust Snake Plant"/>
+                            <f:selectItem itemValue="Syngonium" itemLabel="Syngonium"/>
+                            <f:selectItem itemValue="White Glass Pot" itemLabel="White Glass Pot"/>
                         </h:selectOneMenu>
                     </div>
-                    <h:commandButton type="submit" styleClass="btn btn-dark" value="Add to Cart"/>
-                </form>
+                    <h:commandButton type="submit" styleClass="btn btn-dark" value="Add to Cart" action="#{cartFormBeam.addCartItem}"/>
+                </h:form>
             </div>
         </div>
     </div>
