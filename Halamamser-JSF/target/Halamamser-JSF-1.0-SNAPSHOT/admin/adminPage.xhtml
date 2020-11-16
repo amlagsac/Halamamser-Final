@@ -82,35 +82,26 @@
                 <thead>
                 <tr>
                     <th>Buyer name</th>
+                    <th>Buyer address</th>
                     <th>Product name</th>
-                    <th>Quantity</th>
                     <th>Product total amount</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>Kyla Andrea Lapid</td>
-                    <td>Caladium</td>
-                    <td>1</td>
-                    <td>Php 250.00</td>
-                    <td><img src="resources/img/accept.png" class="delete" data-toggle="tooltip" title="Accept order"/> | <img src="resources/img/decline2.png" class="delete" data-toggle="tooltip" title="Decline order"/> | <img src="resources/img/add.png" class="delete" data-toggle="tooltip" title="Add delivery date"/></td>
-                </tr>
-                <tr>
-                    <td>Kyla Andrea Lapid</td>
-                    <td>Caladium</td>
-                    <td>1</td>
-                    <td>Php 250.00</td>
-                    <td><img src="resources/img/accept.png" class="delete" data-toggle="tooltip" title="Accept order"/> | <img src="resources/img/decline2.png" class="delete" data-toggle="tooltip" title="Decline order"/> | <img src="resources/img/add.png" class="delete" data-toggle="tooltip" title="Add delivery date"/></td>
-                </tr>
-                <tr>
-                    <td>Kyla Andrea Lapid</td>
-                    <td>Caladium</td>
-                    <td>1</td>
-                    <td>Php 250.00</td>
-                    <td><img src="resources/img/accept.png" class="delete" data-toggle="tooltip" title="Accept order"/> | <img src="resources/img/decline2.png" class="delete" data-toggle="tooltip" title="Decline order"/> | <img src="resources/img/add.png" class="delete" data-toggle="tooltip" title="Add delivery date"/></td>
-                </tr>
-                </tbody>
+                <ui:repeat value="#{shipFormBean.items}" var="item">
+                    <tbody>
+                    <tr>
+                        <td><h:outputText value="#{item.firstName}" /> <h:outputText value="#{item.middleName}" /> <h:outputText value="#{item.lastName}" /></td>
+                        <td><h:outputText value="#{item.city}" /> <h:outputText value="#{item.country}" /> <h:outputText value="#{item.zipCode}" /></td>
+<!--                        <td><h:outputText value="#{cartFormBean.items_Cart.name}" /></td>-->
+<!--                        <td><h:outputText value="#{cartFormBean.total2}" /></td>-->
+                        <!--                        <td><img src="resources/img/delete.png" class="delete" data-toggle="tooltip" title="Delete"/></td>-->
+                        <td><h:link value="accept" outcome="">
+                            <f:param name="itemId" value="#{item.itemId}" />
+                        </h:link></td>
+                    </tr>
+                    </tbody>
+                </ui:repeat>
             </table>
         </div>
     </div>

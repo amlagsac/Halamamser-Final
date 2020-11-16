@@ -12,14 +12,16 @@
     <list default="true" id="1b9cf5ce-95c3-4450-bab8-c2fe875a5580" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/Halamamser-Final.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Halamamser-Final.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-EJB/src/main/java/apc/entjava/halamamser/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-EJB/src/main/java/apc/entjava/halamamser/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-EJB/src/main/java/apc/entjava/halamamser/ShipItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-EJB/src/main/java/apc/entjava/halamamser/ShipItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-EJB/src/main/java/apc/entjava/halamamser/ShipLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-EJB/src/main/java/apc/entjava/halamamser/ShipLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/java/apc/entjava/halamamser/ShipFormBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/java/apc/entjava/halamamser/ShipFormBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/admin/adminPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/admin/adminPage.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/ship.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/ship.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/lib/Halamamser-EJB-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/lib/Halamamser-EJB-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/adminPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/adminPage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/cart.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/cart.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/resources/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/ship.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/ship.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +44,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Users\Annie\AppData\Local\JetBrains\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -81,17 +83,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WildFly 20.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Wildfly 20.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -177,7 +168,13 @@
       <workItem from="1605314586164" duration="3936000" />
       <workItem from="1605335138405" duration="3241000" />
       <workItem from="1605426688624" duration="8737000" />
+<<<<<<< Updated upstream
       <workItem from="1605483052654" duration="42494000" />
+=======
+      <workItem from="1605483052654" duration="32660000" />
+      <workItem from="1605525211752" duration="1350000" />
+      <workItem from="1605528864457" duration="10071000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -197,13 +194,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605338212439" />
-    <state x="223" y="46" width="1089" height="751" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605342391055">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="186" y="38" width="1089" height="751" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605540218319">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="186" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1605540218319" />
     <state x="223" y="46" width="1089" height="751" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605342391055" />
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1605515906983">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="478" y="49" key="#com.intellij.ide.util.MemberChooser" timestamp="1605534926486">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="478" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1605534926486" />
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605515906983" />
     <state x="397" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605321037984">
       <screen x="0" y="0" width="1536" height="824" />
@@ -228,6 +227,7 @@
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605528964602">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+<<<<<<< Updated upstream
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605528964602" />
     <state width="1024" height="207" key="GridCell.Tab.0.bottom" timestamp="1605535214624">
       <screen x="0" y="0" width="1536" height="824" />
@@ -249,6 +249,29 @@
     </state>
     <state width="845" height="24" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605435742223" />
     <state width="1024" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605535214624" />
+=======
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605513807711" />
+    <state width="845" height="9" key="GridCell.Tab.0.bottom" timestamp="1605541320349">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="9" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605541320349" />
+    <state width="1024" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605519615565" />
+    <state width="845" height="9" key="GridCell.Tab.0.center" timestamp="1605541320349">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="9" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605541320349" />
+    <state width="1024" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605519615565" />
+    <state width="845" height="9" key="GridCell.Tab.0.left" timestamp="1605541320349">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="9" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605541320349" />
+    <state width="1024" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605519615565" />
+    <state width="845" height="9" key="GridCell.Tab.0.right" timestamp="1605541320349">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="9" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605541320349" />
+    <state width="1024" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605519615565" />
+>>>>>>> Stashed changes
     <state width="1024" height="207" key="GridCell.Tab.1.bottom" timestamp="1605341620996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
