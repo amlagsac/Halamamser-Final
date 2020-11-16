@@ -17,13 +17,13 @@
     <script type="text/javascript" src="resources/js/admin.js"></script>
     <link rel="stylesheet" href="resources/css/style.css"/>
 </h:head>
-<body style="background-image: url('resources/img/plant3.jpg'); background-size: cover;">
+<h:body style="background-image: url('resources/img/plant3.jpg'); background-size: cover;">
 
 <nav class="navbar navbar-expand-sm navbar-light">
     <a class="navbar-brand" href="#">Halamamser Admin Page</a>
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-            <a class="nav-link" href="adminPage.xhtml">Home</a>
+            <a class="nav-link" href="../homepage.xhtml">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href=".../login_register/main.html">Logout</a>
@@ -54,30 +54,23 @@
                 <tr>
                     <th>Product name</th>
                     <th>Product amount</th>
-                    <th>Product status</th>
+                    <th>Product category</th>
                     <th></th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>Calathea Peacock</td>
-                    <td>Php 250.00</td>
-                    <td>Available</td>
-                    <td><img src="resources/img/delete.png" class="delete" data-toggle="tooltip" title="Delete"/></td>
-                </tr>
-                <tr>
-                    <td>Snake Plant</td>
-                    <td>Php 150.00</td>
-                    <td>Out of stock</td>
-                    <td><img src="resources/img/delete.png" class="delete" data-toggle="tooltip" title="Delete"/></td>
-                </tr>
-                <tr>
-                    <td>Golden Pothos</td>
-                    <td>Php 350.00</td>
-                    <td>Available</td>
-                    <td><img src="resources/img/delete.png" class="delete" data-toggle="tooltip" title="Delete"/></td>
-                </tr>
-                </tbody>
+                <ui:repeat value="#{homepageItemFormBean.items}" var="item">
+                    <tbody>
+                    <tr>
+                        <td><h:outputText value="#{item.name}" /></td>
+                        <td><h:outputText value="#{item.price}" /></td>
+                        <td><h:outputText value="#{item.category}" /></td>
+<!--                        <td><img src="resources/img/delete.png" class="delete" data-toggle="tooltip" title="Delete"/></td>-->
+                        <td><h:link value="Remove" outcome="confirm">
+                            <f:param name="itemId" value="#{item.itemId}" />
+                        </h:link></td>
+                    </tr>
+                    </tbody>
+                </ui:repeat>
             </table>
         </div>
     </div>
@@ -133,20 +126,22 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="inputCategory" class="col-sm-6 col-form-label" style="text-align: center;">Product category</label>
+                <div class="col-sm-5">
+                    <h:selectOneMenu value="#{homepageItemFormBean.item.category}" id="inputCategory" styleClass="form-control" required="true" requiredMessage="Please choose a category." >
+                        <f:selectItem itemValue="Plant" itemLabel="Plants" />
+                        <f:selectItem itemValue="Pot" itemLabel="Pots" />
+                    </h:selectOneMenu>
+                    <h:message for="inputCategory" errorStyle="color:red; display:inline-block"></h:message>
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="inputProductAmount" class="col-sm-6 col-form-label" style="text-align: center;">Product amount</label>
                 <div class="col-sm-5">
                     <h:inputText value="#{homepageItemFormBean.item.price}" id="inputProductAmount" styleClass="form-control" a:placeholder="Enter product amount" required="true" requiredMessage="Please enter product amount"/>
                     <h:message for="inputProductAmount" errorStyle="color:red; display:inline-block"></h:message>
                 </div>
             </div>
-<!--            <div class="form-group row">-->
-<!--                <label for="addProductImage" class="col-sm-6 col-form-label" style="text-align: center;">Add image</label>-->
-<!--                <div class="col-sm-5">-->
-<!--&lt;!&ndash;                    <input type="file" id="addProductImage" name="filename"/>&ndash;&gt;-->
-<!--                    <h:inputFile id="addProductImage" required="true" requiredMessage="Please add product image"/>-->
-<!--                    <h:message for="addProductImage" errorStyle="color:red; display:inline-block"></h:message>-->
-<!--                </div>-->
-<!--            </div>-->
             <div style="text-align: center;">
                 <h:commandButton styleClass="btn btn-primary custom-btn" value="Submit" action="#{homepageItemFormBean.addItem()}"/>
 <!--                <button type="submit" class="btn btn-primary custom-btn" id="login">Add product</button>-->
@@ -156,6 +151,6 @@
 
 </div>
 
-</body>
+</h:body>
 
 </html>

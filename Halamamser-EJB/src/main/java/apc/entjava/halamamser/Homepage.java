@@ -15,7 +15,7 @@ public class Homepage implements HomepageLocal {
 
     @Override
     public List<HomepageItem> getItems() {
-        return this.entityManager.createQuery("SELECT P FROM HomepageItem P", HomepageItem.class).getResultList();
+        return this.entityManager.createQuery("SELECT P FROM HomepageItem P ORDER BY P.category ASC", HomepageItem.class).getResultList();
     }
 
     @Override

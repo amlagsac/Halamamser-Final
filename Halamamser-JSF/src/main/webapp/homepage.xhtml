@@ -59,6 +59,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="cart.xhtml">Cart</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="admin/adminPage.xhtml">Admin</a>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -75,43 +78,22 @@
     </div>
     <div class="row container-fluid">
         <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
-        <div class="col-lg-3 col-md-4 col-6" >
-            <h:dataTable value="#{homepageItemFormBean.items}" var="item">
-                <h:column>
-                    <h3><h:outputLabel value="#{item.name}" /></h3>
-                    <h5><h:outputLabel value="#{item.price}" /></h5>
-                </h:column>
-            </h:dataTable>
-            <img class="img-fluid img-thumbnail" src="resources/image/CalatheaPeacock.JPG" alt=""/>
-
-            <a href="#" class="d-block mb-4 h-100" id="product1">
-                <button type="submit" class="btn btn-primary">Add to Cart</button>
-            </a>
-        </div>
+            <ui:repeat value="#{homepageItemFormBean.items}" var="item">
+                <div class="col-lg-3 col-md-4 col-6" >
+                    <div style="text-align: center;">
+                        <h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/>
+                        <h3>Name: <h:outputLabel value="#{item.name}" /></h3>
+                        <h3>Category: <h:outputLabel value="#{item.category}" /></h3>
+                        <h5>Price: ₱<h:outputLabel value="#{item.price}" /></h5>
+<!--                            <button type="submit" class="btn btn-primary">Add to Cart</button>-->
+                        <h:commandButton styleClass="btn btn-primary" action="cart" value="Add to Cart" />
+                    </div>
+                </div>
+            </ui:repeat>
         <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
     </div><!-- end div row1 "plants"-->
 
 </div>
-<div class="row container-fluid" id="potsTitle">
-    <h1>POTS</h1>
-</div>
-<div class="row container-fluid">
-    <!--start: dito ka mag edit ANDRE POTS PRODUCTS-->
-    <div class="col-lg-3 col-md-4 col-6" >
-        <img class="img-fluid img-thumbnail" src="resources/image/clayvase.JPG" alt=""/>
-        <h3>Clay Vase</h3>
-        <h5>₱ 200</h5>
-        <a href="#" class="d-block mb-4 h-100" id="product2">
-            <button type="submit" class="btn btn-primary">Add to Cart</button>
-        </a>
-    </div>
-
-
-
-
-    <!--end: dito ka mag edit ANDRE POTS PRODUCTS-->
-</div><!-- end div row 2 "pots" -->
-
 <script type="text/javascript" src="js/homepage.js"></script>
 </body>
 </html>
