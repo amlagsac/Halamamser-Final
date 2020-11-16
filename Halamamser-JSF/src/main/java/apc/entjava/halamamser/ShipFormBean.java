@@ -10,7 +10,6 @@ import apc.entjava.halamamser.ShipItem;
 
 @SessionScoped
 @Named
-
 public class ShipFormBean implements Serializable {
 
     @EJB
@@ -24,8 +23,8 @@ public class ShipFormBean implements Serializable {
     public ShipFormBean() {
     }
 
-    public String addItem() {
-        int id = (this.shipLocal.getItems().size() + 1);
+    public String addItem_Ship() {
+        int id = (this.shipLocal.getItems_Ship().size() + 1);
         this.shipLocal.addItem_Ship(new ShipItem(
                 this.item.getFirstName(),
                 this.item.getMiddleName(),
@@ -40,10 +39,10 @@ public class ShipFormBean implements Serializable {
                 this.item.getEmail(),
                 this.item.getContactNum()
         ));
-        this.shipLocal.getItems().stream().forEach((item) -> {
+        this.shipLocal.getItems_Ship().stream().forEach((item) -> {
             System.out.println(item.toString());
         });
-        return "../ship.xhtml?faces-redirect=true";
+        return "homepage.xhtml?faces-redirect=true";
     }
 
     public ShipItem getItem() {
@@ -54,8 +53,8 @@ public class ShipFormBean implements Serializable {
         this.item = item;
     }
 
-    public List<ShipItem> getItems() {
-        return this.shipLocal.getItems();
+    public List<ShipItem> getItems_Ship() {
+        return this.shipLocal.getItems_Ship();
     }
 
 //    public void setItems(List<HomepageItem> items) {

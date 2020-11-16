@@ -47,8 +47,6 @@ public class ShipItem{
     @Column(name="contact number")
     private String contactNum;
 
-    private int newPrice;
-
     public ShipItem() {
     }
 
@@ -188,7 +186,7 @@ public class ShipItem{
 
 
     public String toString() {
-        return "HomepageItem [itemId=" + this.itemId +
+        return "ShipItem [itemId=" + this.itemId +
                 ", first name=" + this.firstName +
                 ", middle name=" + this.middleName +
                 ", last name=" + this.lastName +

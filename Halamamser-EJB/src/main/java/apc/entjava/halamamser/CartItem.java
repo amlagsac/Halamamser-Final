@@ -69,6 +69,6 @@ public class CartItem {
     }
 
     public String toString() {
-        return "HomepageItem [itemId=" + this.itemId + ", name=" + this.name + ", price=" + this.price + "]";
+        return "CartItem [itemId=" + this.itemId + ", name=" + this.name + ", price=" + this.price + "]";
     }
 }

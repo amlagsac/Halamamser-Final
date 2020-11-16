@@ -88,13 +88,13 @@
                     <th>Actions</th>
                 </tr>
                 </thead>
-                <ui:repeat value="#{shipFormBean.items}" var="item">
+                <ui:repeat value="#{shipFormBean.items_Ship}" var="item_ship">
                     <tbody>
                     <tr>
-                        <td><h:outputText value="#{item.firstName}" /> <h:outputText value="#{item.middleName}" /> <h:outputText value="#{item.lastName}" /></td>
-                        <td><h:outputText value="#{item.city}" /> <h:outputText value="#{item.country}" /> <h:outputText value="#{item.zipCode}" /></td>
-<!--                        <td><h:outputText value="#{cartFormBean.items_Cart.name}" /></td>-->
-<!--                        <td><h:outputText value="#{cartFormBean.total2}" /></td>-->
+                        <td><h:outputText value="#{item_ship.firstName}" /> <h:outputText value="#{item_ship.middleName}" /> <h:outputText value="#{item_ship.lastName}" /></td>
+                        <td><h:outputText value="#{item_ship.city}" /> <h:outputText value="#{item_ship.country}" /> <h:outputText value="#{item_ship.zipCode}" /></td>
+                        <td><h:outputText value="#{cartFormBeam.item.name}" /></td>
+                        <td><h:outputText value="#{cartFormBeam.total2}" /></td>
                         <!--                        <td><img src="resources/img/delete.png" class="delete" data-toggle="tooltip" title="Delete"/></td>-->
                         <td><h:link value="accept" outcome="">
                             <f:param name="itemId" value="#{item.itemId}" />
