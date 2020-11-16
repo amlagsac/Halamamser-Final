@@ -30,15 +30,16 @@
     <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
 </h:head>
 
-<body>
+<h:body>
 <!-- start navbar -->
 <nav class="navbar navbar-expand-lg ">
     <a class="navbar-brand" href="#">
-        <img src="resources/image/leaf.png" width="30" height="30" id="logo"/>
+<!--        <img src="resources/image/leaf.png" width="30" height="30" id="logo">-->
+        <h:graphicImage url="resources/image/leaf.png" style="width: 30; height: 30" id="logo" />
     </a>
     <div>
-        <p id="hala">HALAMAMSER</p>
-        <p id="pnp">Plants and potery</p>
+        <p id="hala"><h:outputText value="HALAMAMSER" /></p>
+        <p id="pnp"><h:outputText value="Plants and potery" /></p>
     </div>
 
     <button class="navbar-toggler"
@@ -48,7 +49,8 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
-        <img src="resources/image/list.png" style="max-width: 15px;"/>
+        <h:graphicImage url="resources/image/list.png" style="width: max-width 15px;"/>
+<!--        <img src="resourcesimage/list.png" style="max-width: 15px;">-->
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -59,71 +61,118 @@
             <li class="nav-item">
                 <a class="nav-link" href="cart.xhtml">Cart</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="admin/adminPage.xhtml">Admin</a>
-            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
 
 <!-- end navbar -->
+<div class="container-fluid m-2">
+    <div class="row">
+        <div class="col-9 card">
+            <h3><h:outputText value="PRODUCT CATALOG"/></h3>
+            <div class="container-fluid">
+                <div class="row container-fluid" id="plantsTitle">
+                    <h1><h:outputText value="PLANTS"/></h1>
+                </div>
+                <div class="row container-fluid">
+                    <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/CalatheaPeacock.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Calathea Peacock"/></h3>
+                        <h5><h:outputText value="₱ 200" /></h5>
+                    </div>
 
-<div class="container-fluid">
-    <div class="row container-fluid" id="plantsTitle">
-        <h1>PLANTS</h1>
-    </div>
-    <!-- dito ka lagay ng hahardcode -->
-   <!-- <ui:repeat value="plant1" var="item">-->
-    <div class="row container-fluid">
-        <div class="col-lg-3 col-md-4 col-6" >
-            <div style="text-align: center;">
-                <h:inputHidden ><h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/></h:inputHidden>
-                <h3>Name: <h:outputLabel value="plant2" /></h3>
-                <h:inputHidden id="plant2" value="plant2"></h:inputHidden>
-                <h5>Price: ₱<h:outputLabel value="400" /></h5>
-                <h:inputHidden id="price2" value="400"></h:inputHidden>
-                <!--<button type="submit" class="btn btn-primary">Add to Cart</button>-->
-                <h:commandLink action="#{cartFormBeam.addCartItem}" styleClass="btn btn-primary" value="Buy" />
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/Chinesemoneyplant.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Chinese money plant" /></h3>
+                        <h5><h:outputText value="₱ 150" /></h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/goldenPothos.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Golden Pothos" /></h3>
+                        <h5><h:outputText value="₱ 200" /></h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/luckyBamboo.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Lucky Bamboo" /></h3>
+                        <h5><h:outputText value="₱ 300" /></h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/philodendronLimeLemon.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Philodendron Lime Lemon" /></h3>
+                        <h5><h:outputText value="₱ 250" /></h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/robustSnakeplant.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Robust Snake Plant" /></h3>
+                        <h5><h:outputText value="₱ 200" /></h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/Snakeplant.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Snake Plant" /></h3>
+                        <h5><h:outputText value="₱ 400" /></h5>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6" >
+                        <h:graphicImage url="resources/image/Syngonium.JPG" styleClass="img-fluid img-thumbnail" />
+                        <h3><h:outputText value="Syngonium" /></h3>
+                        <h5><h:outputText value="₱ 100" /></h5>
+                    </div>
+                    <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
+                </div><!-- end div row1 "plants"-->
+
+            </div>
+            <div class="row container-fluid" id="potsTitle">
+                <h1><h:outputText value="POTS" /></h1>
+            </div>
+            <div class="row container-fluid">
+                <!--start: dito ka mag edit ANDRE POTS PRODUCTS-->
+                <div class="col-lg-3 col-md-4 col-6" >
+                    <h:graphicImage url="resources/image/clayvase.JPG" styleClass="img-fluid img-thumbnail" />
+                    <h3><h:outputText value="Clay Vase" /></h3>
+                    <h5><h:outputText value="₱ 200" /></h5>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" >
+                    <h:graphicImage url="resources/image/grootpot.JPG" styleClass="img-fluid img-thumbnail" />
+                    <h3><h:outputText value="Groot pot" /></h3>
+                    <h5><h:outputText value="₱ 200" /></h5>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" >
+                    <h:graphicImage url="resources/image/whiteglasspot.JPG" styleClass="img-fluid img-thumbnail" />
+                    <h3><h:outputText value="White glass pot" /></h3>
+                    <h5><h:outputText value="₱ 200" /></h5>
+                </div>
+
+                <!--end: dito ka mag edit ANDRE POTS PRODUCTS-->
+            </div><!-- end div row 2 "pots" -->
+        </div>
+        <div class=" col-2 card" style="display: block;">
+            <div class="m-0 p-0" >
+                <h3><h:outputText value="BUY PRODUCTS" /></h3>
+
+                <form class="mt-5">
+                    <div class="form-group ">
+                        <label for="inputState">Choose your product from the catalog</label>
+                        <h:selectOneMenu id="inputState" styleClass="form-control" >
+                            <f:selectItem itemValue="Choose" itemLabel="Choose" />
+                        </h:selectOneMenu>
+                    </div>
+                    <h:commandButton type="submit" styleClass="btn btn-dark" value="Add to Cart"/>
+                </form>
             </div>
         </div>
-
-    <div class="col-lg-3 col-md-4 col-6" >
-        <div style="text-align: center;">
-            <h:inputHidden ><h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/></h:inputHidden>
-            <h3>Name: <h:outputLabel value="plant1" /></h3>
-            <h:inputHidden id="name1" value="plant1"></h:inputHidden>
-            <h5>Price: ₱<h:outputLabel value="200" /></h5>
-            <h:inputHidden id="price1" value="200"></h:inputHidden>
-            <!--<button type="submit" class="btn btn-primary">Add to Cart</button>-->
-            <h:commandLink action="#{cartFormBeam.addCartItem}" styleClass="btn btn-primary" value="Buy" />
-        </div>
-        </div>
     </div>
-   <!-- </ui:repeat>-->
-
-    <!--end-->
-    <div class="row container-fluid">
-        <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
-            <ui:repeat value="#{homepageItemFormBean.items}" var="item">
-                <div class="col-lg-3 col-md-4 col-6" >
-                    <div style="text-align: center;">
-                        <h:inputHidden value="100"><h:graphicImage url="resources/image/plant.jpg" style="width: 300px; height:300px"/></h:inputHidden>
-                        <h:inputHidden value="#{cartFormBeam.item.name}" /><h3>Name: <h:outputLabel value="plant1" /></h3>
-                        <h5>Price: ₱<h:outputLabel value="200" /></h5>
-<!--                            <button type="submit" class="btn btn-primary">Add to Cart</button>-->
-                        <h:commandLink action="#{cartFormBeam.addCartItem}" styleClass="btn btn-primary" value="Add to Cart" >
-                            <f:param name="itemId" value="#{homepageItemFormBean.item.itemId}"/>
-                        </h:commandLink>
-                    </div>
-                </div>
-            </ui:repeat>
-        <!--end: dito ka mag edit ANDRE PLANTS PRODUCTS-->
-    </div><!-- end div row1 "plants"-->
 </div>
-<script type="text/javascript" src="js/homepage.js"></script>
-</body>
+
+
+</h:body>
 </html>
