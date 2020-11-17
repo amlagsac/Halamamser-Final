@@ -18,14 +18,12 @@ public class ShipFormBean implements Serializable {
     private ShipItem item = new ShipItem();
 
 
-//    private List<HomepageItem>items = new ArrayList<>();
-
     public ShipFormBean() {
     }
 
     public String addItem_Ship() {
-        int id = (this.shipLocal.getItems_Ship().size() + 1);
-        this.shipLocal.addItem_Ship(new ShipItem(
+        int id = (this.shipLocal.getItem_Ship().size() + 1);
+        this.shipLocal.addItem(new ShipItem(
                 this.item.getFirstName(),
                 this.item.getMiddleName(),
                 this.item.getLastName(),
@@ -36,10 +34,10 @@ public class ShipFormBean implements Serializable {
                 this.item.getCountry(),
                 this.item.getZipCode(),
                 this.item.getDob(),
-                this.item.getEmail(),
-                this.item.getContactNum()
+                this.item.getContactNum(),
+                this.item.getEmail()
         ));
-        this.shipLocal.getItems_Ship().stream().forEach((item) -> {
+        this.shipLocal.getItem_Ship().stream().forEach((item) -> {
             System.out.println(item.toString());
         });
         return "homepage.xhtml?faces-redirect=true";
@@ -54,7 +52,7 @@ public class ShipFormBean implements Serializable {
     }
 
     public List<ShipItem> getItems_Ship() {
-        return this.shipLocal.getItems_Ship();
+        return this.shipLocal.getItem_Ship();
     }
 
 //    public void setItems(List<HomepageItem> items) {

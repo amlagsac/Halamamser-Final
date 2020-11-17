@@ -32,6 +32,10 @@ public class HomepageItemFormBean implements Serializable {
         return "../homepage.xhtml?faces-redirect=true";
     }
 
+    public String redirect() {
+        return "admin/adminPage.xhtml?faces-redirect=true";
+    }
+
     public HomepageItem getItem() {
         return item;
     }

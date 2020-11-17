@@ -34,7 +34,7 @@
 
 <h:body style="background-image: url('resources/image/plant2.jpg'); background-size: cover;">
 
-    <h:form id="item-form">
+    <h:form>
 
     <div class="container">
 
@@ -189,12 +189,16 @@
                         <div class="container mt-0" id="inputSignup4">
                             <div class="form-group form-check">
                                 <div style="display: inline">
-                                    I agree in Halamamser term and conditions<h:selectBooleanCheckbox value="true" required="true" />
+                                    <h:selectBooleanCheckbox id="checkbox" value="true" required="true" requiredMessage="please check" />
+                                    <h:message for="checkbox" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
+                                    <label class="form-check-label">
+                                        I agree in Halamamser term and conditions
+                                    </label>
                                 </div>
                             </div>
 
                             <div style="text-align: center;">
-                                <h:commandButton action="#{shipFormBean.addItem_Ship}" type="submit" styleClass="btn btn-primary" id="register" value="Confirm" />
+                                <h:commandButton action="#{shipFormBean.addItem_Ship}" styleClass="btn btn-primary" id="register" value="Confirm" />
 <!--                                <button type="submit" class="btn btn-primary custom-btn" id="register">CONFIRM</button>-->
                             </div>
                         </div>

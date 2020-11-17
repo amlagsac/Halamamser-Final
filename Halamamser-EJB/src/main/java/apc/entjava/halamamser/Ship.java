@@ -14,12 +14,12 @@ public class Ship implements ShipLocal {
     private EntityManager entityManager;
 
     @Override
-    public List<ShipItem> getItems_Ship() {
-        return this.entityManager.createQuery("SELECT S FROM ShipItem S", ShipItem.class).getResultList();
+    public List<ShipItem> getItem_Ship() {
+        return this.entityManager.createQuery("SELECT A FROM ShipItem A", ShipItem.class).getResultList();
     }
 
     @Override
-    public void addItem_Ship(ShipItem item) {
+    public void addItem(ShipItem item) {
         this.entityManager.persist(item);
     }
 

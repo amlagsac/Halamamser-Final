@@ -28,6 +28,16 @@ public class CartFormBeam implements Serializable {
         return "homepage?faces-redirect=true";
     }
 
+    public String getString() {
+
+        String string = "";
+
+        for (CartItem cartItem : getItems_Cart()) {
+            string += (cartItem.getName()) + ", ";
+        }
+        return string;
+    }
+
     public Float getTotal() {
 
         Float total = 0f;

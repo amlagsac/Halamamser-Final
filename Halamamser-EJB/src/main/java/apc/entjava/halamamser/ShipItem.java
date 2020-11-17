@@ -11,19 +11,19 @@ public class ShipItem{
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Long itemId;
 
-    @Column(name="first name")
+    @Column(name="first_name")
     private String firstName;
 
-    @Column(name="middle name")
+    @Column(name="middle_name")
     private String middleName;
 
-    @Column(name="last name")
+    @Column(name="last_name")
     private String lastName;
 
-    @Column(name="house number")
-    private String houseNum;
+    @Column(name="house_number")
+    private long houseNum;
 
-    @Column(name="house street")
+    @Column(name="house_street")
     private String houseStreet;
 
     @Column(name="barangay")
@@ -35,8 +35,8 @@ public class ShipItem{
     @Column(name="country")
     private String country;
 
-    @Column(name="zip code")
-    private String zipCode;
+    @Column(name="zip_code")
+    private long zipCode;
 
     @Column(name="dob")
     private String dob;
@@ -44,26 +44,10 @@ public class ShipItem{
     @Column(name="email")
     private String email;
 
-    @Column(name="contact number")
-    private String contactNum;
+    @Column(name="contact_number")
+    private long contactNum;
 
-    public ShipItem() {
-    }
-
-    public ShipItem(
-            String firstName,
-            String middleName,
-            String lastName,
-            String houseNum,
-            String houseStreet,
-            String barangay,
-            String city,
-            String country,
-            String zipCode,
-            String dob,
-            String email,
-            String contactNum
-            ) {
+    public ShipItem(String firstName, String middleName, String lastName, long houseNum, String houseStreet, String barangay, String city, String country, long zipCode, String dob, long contactNum, String email) {
         super();
         this.firstName = firstName;
         this.middleName = middleName;
@@ -77,7 +61,9 @@ public class ShipItem{
         this.dob = dob;
         this.email = email;
         this.contactNum = contactNum;
+    }
 
+    public ShipItem() {
     }
 
     public Long getItemId() {
@@ -112,11 +98,11 @@ public class ShipItem{
         this.lastName = lastName;
     }
 
-    public String getHouseNum() {
+    public Long getHouseNum() {
         return houseNum;
     }
 
-    public void setHouseNum(String houseNum) {
+    public void setHouseNum(Long houseNum) {
         this.houseNum = houseNum;
     }
 
@@ -152,11 +138,11 @@ public class ShipItem{
         this.country = country;
     }
 
-    public String getZipCode() {
+    public Long getZipCode() {
         return zipCode;
     }
 
-    public void setZipCode(String zipCode) {
+    public void setZipCode(Long zipCode) {
         this.zipCode = zipCode;
     }
 
@@ -176,14 +162,13 @@ public class ShipItem{
         this.email = email;
     }
 
-    public String getContactNum() {
+    public long getContactNum() {
         return contactNum;
     }
 
-    public void setContactNum(String contactNum) {
+    public void setContactNum(long contactNum) {
         this.contactNum = contactNum;
     }
-
 
     public String toString() {
         return "ShipItem [itemId=" + this.itemId +
@@ -199,7 +184,7 @@ public class ShipItem{
                 ", dob=" + this.dob +
                 ", email=" + this.email +
                 ", contact number=" + this.contactNum +
-                 "]";
+                "]";
 
     }
 
