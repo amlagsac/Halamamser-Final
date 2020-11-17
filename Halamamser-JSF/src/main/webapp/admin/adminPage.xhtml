@@ -96,8 +96,8 @@
                         <ui:repeat value="#{shipFormBean.items_Ship}" var="item_ship">
                             <tbody>
                             <tr>
-                                <td><h:outputText value="#{item_ship.firstName}" /><h:outputText value="#{item_ship.middleName}" /><h:outputText value="#{item_ship.lastName}" /></td>
-                                <td><h:outputText value="#{item_ship.city}" /> <h:outputText value="#{item_ship.country}" /> <h:outputText value="#{item_ship.zipCode}" /></td>
+                                <td><h:outputText value="#{item_ship.firstName}" /><h:outputText value=" " /><h:outputText value="#{item_ship.middleName}" /><h:outputText value=" " /><h:outputText value="#{item_ship.lastName}" /></td>
+                                <td><h:outputText value="#{item_ship.city}" /><h:outputText value=", " /><h:outputText value="#{item_ship.country}" /><h:outputText value=" " /><h:outputText value="#{item_ship.zipCode}" /></td>
                                 <td><h:outputText value="#{cartFormBeam.string}" /></td>
                                 <td>₱<h:outputText value="#{cartFormBeam.total2}" /></td>
                                 <td><h:link value="accept" outcome="">

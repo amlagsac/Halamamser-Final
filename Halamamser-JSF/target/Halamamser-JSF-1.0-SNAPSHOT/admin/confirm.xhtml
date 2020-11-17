@@ -10,13 +10,19 @@
         <title>HALAMAMSER | Administrator Page</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <script type="text/javascript" src="resources/js/admin.js"></script>
         <link rel="stylesheet" href="resources/css/style.css"/>
 
+        <!--Gets all record from the selected item-->
         <f:metadata>
             <f:viewParam name="itemId" value="#{homepageItemDeleteBean.itemId}" />
             <f:event type="preRenderView" listener="#{homepageItemDeleteBean.fetchItem()}"/>
@@ -28,16 +34,20 @@
             <h3>Please confirm that you would like to delete the following:</h3>
             <div>
                 <h:outputLabel value="Product Name:" />
+                <!--Outputs item name-->
                 <h:outputLabel value="#{homepageItemDeleteBean.item.name}" />
             </div>
             <div>
                 <h:outputLabel value="Price:" />
+                <!--Outputs item price-->
                 <h:outputLabel value="#{homepageItemDeleteBean.item.price}" />
             </div>
             <div>
                 <h:outputLabel value="Category:" />
+                <!--Outputs item category-->
                 <h:outputLabel value="#{homepageItemDeleteBean.item.category}" />
             </div>
+            <!--Trigger for performing removeItem function in homepageItemDeleteBean-->
             <h:commandButton action="#{homepageItemDeleteBean.removeItem()}" value="Submit" />
             <h:commandButton action="adminPage" value="Cancel" />
         </h:form>
