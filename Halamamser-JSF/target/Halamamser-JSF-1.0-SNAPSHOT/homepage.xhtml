@@ -70,7 +70,7 @@
         <!-- end navbar -->
         <div class="container-fluid m-2">
             <div class="row">
-                <div class="col-9 card">
+                <div class="col-9 card"> <!--column 1, PRODUCT CATALOG for available products display-->
                     <h3><h:outputText value="PRODUCT CATALOG"/></h3>
                     <div class="container-fluid">
                         <div class="row container-fluid" id="plantsTitle">
@@ -139,9 +139,9 @@
                             <h5><h:outputText value="₱ 200" /></h5>
                         </div>
 
-                        <!--end: dito ka mag edit ANDRE POTS PRODUCTS-->
                     </div><!-- end div row 2 "pots" -->
                 </div>
+                <!--column 2, Choose product via dropdown button-->
                 <div class=" col-2 card" style="display: block;">
                     <div class="m-0 p-0" >
                         <h3><h:outputText value="BUY PRODUCTS" /></h3>
@@ -165,6 +165,7 @@
                         </h:form>
                         <hr style="width: 100%; color:black " />
                         <div class="mt-3">
+                            <!--display chosen products-->
                             <b><h:outputText value="Currently In Cart:" /><br /></b>
                             <ui:repeat value="#{cartFormBeam.items_Cart}" var="items_homepage" >
                                 <h:outputText value="#{items_homepage.name}" /> <br />

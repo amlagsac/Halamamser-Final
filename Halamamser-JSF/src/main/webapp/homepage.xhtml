@@ -138,7 +138,13 @@
                             <h3><h:outputText value="White glass pot" /></h3>
                             <h5><h:outputText value="₱ 200" /></h5>
                         </div>
-
+                        <div class="col-lg-3 col-md-4 col-6" >
+                            <ui:repeat value="#{homepageItemFormBean.items}" var="item" >
+                                <h:graphicImage url="resources/image/plant.jpg" styleClass="img-fluid img-thumbnail" />
+                                <h3><h:outputText value="#{item.name}" /></h3>
+                                <h5><h:outputText value="#{item.price}" /></h5>
+                            </ui:repeat>
+                        </div>
                     </div><!-- end div row 2 "pots" -->
                 </div>
                 <!--column 2, Choose product via dropdown button-->
