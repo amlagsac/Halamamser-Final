@@ -28,20 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b9cf5ce-95c3-4450-bab8-c2fe875a5580" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/resources/css/thankYou.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/thankYou.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/java/apc/entjava/halamamser/ShipFormBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/java/apc/entjava/halamamser/ShipFormBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/classes/apc/entjava/halamamser/ShipFormBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/classes/apc/entjava/halamamser/ShipFormBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/lib/Halamamser-EJB-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/WEB-INF/lib/Halamamser-EJB-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/adminPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/adminPage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/confirm.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/admin/confirm.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/cart.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/cart.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/homepage.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/ship.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/Halamamser-JSF-1.0-SNAPSHOT/ship.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/target/classes/apc/entjava/halamamser/ShipFormBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/target/classes/apc/entjava/halamamser/ShipFormBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/admin/adminPage.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/admin/adminPage.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/admin/confirm.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/admin/confirm.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/thankYou.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/Halamamser-JSF/src/main/webapp/thankYou.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +54,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Users\Annie\AppData\Local\JetBrains\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -196,6 +186,7 @@
       <workItem from="1605591721841" duration="3778000" />
       <workItem from="1605596638655" duration="2662000" />
       <workItem from="1605605196092" duration="2690000" />
+      <workItem from="1605617899034" duration="991000" />
     </task>
     <servers />
   </component>

@@ -10,15 +10,21 @@
         <title>HALAMAMSER | Administrator Page</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <script type="text/javascript" src="resources/js/admin.js"></script>
         <link rel="stylesheet" href="resources/css/style.css"/>
     </h:head>
 
     <h:body style="background-image: url('resources/img/plant3.jpg'); background-size: cover;">
+        <!--Start of navbar-->
         <nav class="navbar navbar-expand-sm navbar-light">
             <a class="navbar-brand" href="#">Halamamser Admin Page</a>
             <ul class="navbar-nav ml-auto">
@@ -27,17 +33,23 @@
                 </li>
             </ul>
         </nav>
+        <!--End of navbar-->
         <div class="container">
+            <!--Options for admin-->
             <div class="grid-container">
                 <div class="view-all-products" onclick="viewAllProducts()">View all products</div>
                 <div class="view-all-orders" onclick="viewAllOrders()">View all orders</div>
                 <div class="create-new-product" onclick="createNewProduct()">Create new product</div>
             </div>
+
+            <!--Indicator for active section-->
             <div class="container" id="active-label">
                 <div class="col-sm-12">
                     <br/>
                 </div>
             </div>
+
+            <!--View all products section-->
             <div class="container" id="view-all-products-container">
                 <div id="view-all-products-table">
                     <table class="table table-hover">
@@ -49,6 +61,8 @@
                             <th></th>
                         </tr>
                         </thead>
+
+                        <!--Displays items from HomepageItemFormBean-->
                         <ui:repeat value="#{homepageItemFormBean.items}" var="item">
                             <tbody>
                             <tr>
@@ -64,6 +78,8 @@
                     </table>
                 </div>
             </div>
+
+            <!--View all orders section-->
             <div class="container" id="view-all-orders-container">
                 <div class="table-responsive" id="view-all-orders-table">
                     <table class="table table-hover">
@@ -76,6 +92,7 @@
                             <th><h:outputText value="Actions" /></th>
                         </tr>
                         </thead>
+                        <!--Displays items from shipFormBean-->
                         <ui:repeat value="#{shipFormBean.items_Ship}" var="item_ship">
                             <tbody>
                             <tr>
@@ -92,11 +109,14 @@
                     </table>
                 </div>
             </div>
+
+            <!--Create new product section-->
             <div class="container" id="create-new-product-container">
                 <h:form id="item-form">
                     <div class="form-group row">
                         <label for="inputProductName" class="col-sm-6 col-form-label" style="text-align: center;">Product name</label>
                         <div class="col-sm-5">
+                            <!--Stores value in HomepageItemFormBean name-->
                             <h:inputText value="#{homepageItemFormBean.item.name}" id="inputProductName" styleClass="form-control" a:placeholder="Enter product name" required="true" requiredMessage="Please enter product name"/>
                             <h:message for="inputProductName" errorStyle="color:red; display:inline-block" />
                         </div>
@@ -104,6 +124,7 @@
                     <div class="form-group row">
                         <label for="inputCategory" class="col-sm-6 col-form-label" style="text-align: center;">Product category</label>
                         <div class="col-sm-5">
+                            <!--Stores value in HomepageItemFormBean category-->
                             <h:selectOneMenu value="#{homepageItemFormBean.item.category}" id="inputCategory" styleClass="form-control" required="true" requiredMessage="Please choose a category." >
                                 <f:selectItem itemValue="Plant" itemLabel="Plants" />
                                 <f:selectItem itemValue="Pot" itemLabel="Pots" />
@@ -114,11 +135,13 @@
                     <div class="form-group row">
                         <label for="inputProductAmount" class="col-sm-6 col-form-label" style="text-align: center;">Product amount</label>
                         <div class="col-sm-5">
+                            <!--Stores value in HomepageItemFormBean price-->
                             <h:inputText value="#{homepageItemFormBean.item.price}" id="inputProductAmount" styleClass="form-control" a:placeholder="Enter product amount" required="true" requiredMessage="Please enter product amount"/>
                             <h:message for="inputProductAmount" errorStyle="color:red; display:inline-block" />
                         </div>
                     </div>
                     <div style="text-align: center;">
+                        <!--Trigger for performing addItem function in HomePageItemFormBean-->
                         <h:commandButton styleClass="btn btn-primary custom-btn" value="Submit" action="#{homepageItemFormBean.addItem()}"/></div>
                 </h:form>
             </div>
