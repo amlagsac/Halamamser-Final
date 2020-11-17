@@ -40,7 +40,7 @@ public class ShipFormBean implements Serializable {
         this.shipLocal.getItem_Ship().stream().forEach((item) -> {
             System.out.println(item.toString());
         });
-        return "homepage.xhtml?faces-redirect=true";
+        return "thankYou.xhtml?faces-redirect=true";
     }
 
     public ShipItem getItem() {

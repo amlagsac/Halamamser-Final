@@ -5,214 +5,183 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
-<!--<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>-->
-<h:head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
 
-    <title>Halamamser</title>
-    <link rel="icon" href="resources/image/leaf.png" type="image/icon type"/>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <title>Halamamser</title>
+        <link rel="icon" href="resources/image/leaf.png" type="image/icon type"/>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'/>
-    <link rel="stylesheet" type="text/css" href="resources/css/ship.css"/>
-</h:head>
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'/>
+        <link rel="stylesheet" type="text/css" href="resources/css/ship.css"/>
+    </h:head>
 
-
-<h:body style="background-image: url('resources/image/plant2.jpg'); background-size: cover;">
-
-    <h:form>
-
-    <div class="container">
-
-        <h1 >Halamamser</h1>
-        <h2>Shipping</h2>
-        <div class="row">
-            <!-- 1st column inputs -->
-            <div class="col">
-                <!--Sign up-->
-                <div class="container" id="inputSignup">
-                    <div class="form-group row">
-                        <label for="inputFirstName" class="col-sm-6 col-form-label" >First name</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.firstName}" styleClass="form-control" id="inputFirstName" a:placeholder="Enter your first name" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputFirstName" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your first name" required="required" />-->
+    <h:body style="background-image: url('resources/image/plant2.jpg'); background-size: cover;">
+        <h:form>
+            <div class="container">
+                <h1 >Halamamser</h1>
+                <h2>Shipping</h2>
+                <div class="row">
+                    <!-- 1st column inputs -->
+                    <div class="col">
+                        <!--Sign up-->
+                        <div class="container" id="inputSignup">
+                            <div class="form-group row">
+                                <label for="inputFirstName" class="col-sm-6 col-form-label" >First name</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.firstName}" styleClass="form-control" id="inputFirstName" a:placeholder="Enter your first name" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputFirstName" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputMiddleName" class="col-sm-6 col-form-label" >Middle name</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.middleName}" styleClass="form-control" id="inputMiddleName" a:placeholder="Enter your middle name" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputMiddleName" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputLastName" class="col-sm-6 col-form-label">Last name</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.lastName}" styleClass="form-control" id="inputLastName" a:placeholder="Enter your last name" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputLastName" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputHouseNum" class="col-sm-6 col-form-label" >House number</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.houseNum}" styleClass="form-control" id="inputHouseNum" a:placeholder="Enter your house number" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputHouseNum" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputHouseStreet" class="col-sm-6 col-form-label" >House street</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.houseStreet}" styleClass="form-control" id="inputHouseStreet" a:placeholder="Enter your house street" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputHouseStreet" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputBarangay" class="col-sm-6 col-form-label" >Barangay</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.barangay}" styleClass="form-control" id="inputBarangay" a:placeholder="Enter your barangay" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputBarangay" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputCity" class="col-sm-6 col-form-label" >City/Municipality</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.city}" styleClass="form-control" id="inputCity" a:placeholder="Enter your city/municipality" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputCity" errorStyle="color:red; display:inline-block; font-size: 15px;" /><!--                            <input type="text" class="form-control" id="inputCity" placeholder="Enter your city/municipality" required="required" />-->
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputCountry" class="col-sm-6 col-form-label" >Country</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.country}" styleClass="form-control" id="inputCountry" a:placeholder="Enter your country" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputCountry" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputZipCode" class="col-sm-6 col-form-label" >Zip code</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.zipCode}" styleClass="form-control" id="inputZipCode" a:placeholder="Enter your zip code" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputZipCode" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputDOB" class="col-sm-6 col-form-label" >Date of birth</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.dob}" styleClass="form-control" id="inputDOB" a:placeholder="Enter your birthday" required="true" requiredMessage="This field is required">
+                                        <f:convertDateTime pattern = "dd-mm-yyyy" /></h:inputText>
+                                    <h:message for="inputDOB" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputEmail" class="col-sm-6 col-form-label" >Email</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.email}" styleClass="form-control" id="inputEmail" a:placeholder="Enter your email address" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputEmail" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputContactNum" class="col-sm-6 col-form-label" >Contact number</label>
+                                <div class="col-sm-6">
+                                    <h:inputText value="#{shipFormBean.item.contactNum}" styleClass="form-control" id="inputContactNum" a:placeholder="Enter your mobile number" required="true" requiredMessage="This field is required"/>
+                                    <h:message for="inputContactNum" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="inputMiddleName" class="col-sm-6 col-form-label" >Middle name</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.middleName}" styleClass="form-control" id="inputMiddleName" a:placeholder="Enter your middle name" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputMiddleName" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputMiddleName" placeholder="Enter your middle name" required="required" />-->
+                    <div class="col"> <!-- 2nd column amount summary -->
+                        <div class="row pt-5">
+                            <div class="container" id="inputSignup2">
+                                <div class="container-fluid">
+                                    <h2>CASH-ON-DELIVERY</h2>
+                                    <img  src="resources/image/cash-on-delivery.png" class="img-responsive" />
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1" />
+                                        <select class="form-control" id="exampleFormControlSelect1" disabled="disabled">
+                                            <option value="1" selected="selected">CASH ON DELIVERY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputLastName" class="col-sm-6 col-form-label">Last name</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.lastName}" styleClass="form-control" id="inputLastName" a:placeholder="Enter your last name" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputLastName" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputLastName" placeholder="Enter your last name" required="required" />-->
+                        <div class="row">
+                            <div class="container mt-0" id="inputSignup3">
+                                <div class="container-fluid row">
+                                    <h3 >Amount Summary </h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <br /><br />
+                                        <h6><h:outputText value="Amount" /></h6>
+                                        <h6><h:outputText value="Shipping" /></h6>
+                                        <hr />
+                                        <h6 id="total1"><h:outputText value="Total amount (including VAT)" /></h6>
+                                    </div>
+                                    <div class="col-4" id="peso">
+                                        <br/><br/>
+                                        <h6>₱<h:outputText value="#{cartFormBeam.total}" /></h6>
+                                        <h6><h:outputText value="₱50" /></h6>
+                                        <hr/>
+                                        <h6 id="total2">₱<h:outputText value="#{cartFormBeam.total2}" /></h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputHouseNum" class="col-sm-6 col-form-label" >House number</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.houseNum}" styleClass="form-control" id="inputHouseNum" a:placeholder="Enter your house number" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputHouseNum" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputHouseNum" placeholder="Enter your house number" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputHouseStreet" class="col-sm-6 col-form-label" >House street</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.houseStreet}" styleClass="form-control" id="inputHouseStreet" a:placeholder="Enter your house street" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputHouseStreet" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputHouseStreet" placeholder="Enter your house street" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputBarangay" class="col-sm-6 col-form-label" >Barangay</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.barangay}" styleClass="form-control" id="inputBarangay" a:placeholder="Enter your barangay" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputBarangay" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputBarangay" placeholder="Enter your barangay" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputCity" class="col-sm-6 col-form-label" >City/Municipality</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.city}" styleClass="form-control" id="inputCity" a:placeholder="Enter your city/municipality" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputCity" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputCity" placeholder="Enter your city/municipality" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputCountry" class="col-sm-6 col-form-label" >Country</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.country}" styleClass="form-control" id="inputCountry" a:placeholder="Enter your country" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputCountry" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputCountry" placeholder="Enter your country" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputZipCode" class="col-sm-6 col-form-label" >Zip code</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.zipCode}" styleClass="form-control" id="inputZipCode" a:placeholder="Enter your zip code" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputZipCode" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="text" class="form-control" id="inputZipCode" placeholder="Enter your zip code" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputDOB" class="col-sm-6 col-form-label" >Date of birth</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.dob}" styleClass="form-control" id="inputDOB" a:placeholder="Enter your birthday" required="true" requiredMessage="This field is required">
-                                <f:convertDateTime pattern = "dd-mm-yyyy" /></h:inputText>
-                            <h:message for="inputDOB" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="date" class="form-control" id="inputDOB" placeholder="Enter your birthday" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-6 col-form-label" >Email</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.email}" styleClass="form-control" id="inputEmail" a:placeholder="Enter your email address" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputEmail" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required="required" />-->
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="inputContactNum" class="col-sm-6 col-form-label" >Contact number</label>
-                        <div class="col-sm-6">
-                            <h:inputText value="#{shipFormBean.item.contactNum}" styleClass="form-control" id="inputContactNum" a:placeholder="Enter your mobile number" required="true" requiredMessage="This field is required"/>
-                            <h:message for="inputContactNum" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-<!--                            <input type="tel" class="form-control" id="inputContactNum" placeholder="Enter your mobile number" required="required" />-->
+                        <div class="row " >
+                            <div class="container mt-0" id="inputSignup4">
+                                <div class="form-group form-check">
+                                    <div style="display: inline">
+                                        <h:selectBooleanCheckbox id="checkbox" value="true" required="true" requiredMessage="please check" />
+                                        <h:message for="checkbox" errorStyle="color:red; display:inline-block; font-size: 15px;" />
+                                        <label class="form-check-label">
+                                            I agree in Halamamser term and conditions
+                                        </label>
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h:commandButton action="#{shipFormBean.addItem_Ship}" styleClass="btn btn-primary" id="register" value="Confirm" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-                <!-- 2nd column amount summary -->
-                <div class="col">
-                    <div class="row pt-5">
-                        <div class="container" id="inputSignup2">
-
-                            <div class="container-fluid">
-                                <h2>CASH-ON-DELIVERY</h2>
-                                <img  src="resources/image/cash-on-delivery.png" class="img-responsive" />
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1"></label>
-                                    <select class="form-control" id="exampleFormControlSelect1" disabled="disabled">
-                                        <option value="1" selected="selected">CASH ON DELIVERY</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="container mt-0" id="inputSignup3">
-                            <div class="container-fluid row">
-                                <h3 >Amount Summary </h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-8">
-                                    <br /><br />
-                                    <h6><h:outputText value="Amount" /></h6>
-                                    <h6><h:outputText value="Shipping" /></h6>
-                                    <hr />
-                                    <h6 id="total1"><h:outputText value="Total amount (including VAT)" /></h6>
-                                </div>
-                                <div class="col-4" id="peso">
-                                    <br/><br/>
-                                    <h6>₱<h:outputText value="#{cartFormBeam.total}" /></h6>
-                                    <h6><h:outputText value="₱50" /></h6>
-                                    <hr/>
-                                    <h6 id="total2">₱<h:outputText value="#{cartFormBeam.total2}" /></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row " >
-                        <div class="container mt-0" id="inputSignup4">
-                            <div class="form-group form-check">
-                                <div style="display: inline">
-                                    <h:selectBooleanCheckbox id="checkbox" value="true" required="true" requiredMessage="please check" />
-                                    <h:message for="checkbox" errorStyle="color:red; display:inline-block; font-size: 15px;"></h:message>
-                                    <label class="form-check-label">
-                                        I agree in Halamamser term and conditions
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div style="text-align: center;">
-                                <h:commandButton action="#{shipFormBean.addItem_Ship}" styleClass="btn btn-primary" id="register" value="Confirm" />
-<!--                                <button type="submit" class="btn btn-primary custom-btn" id="register">CONFIRM</button>-->
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- amount summary -->
-
-                </div>
-
-            </div>
-
-    </div>
-
-</h:form>
-
-</h:body>
+        </h:form>
+    </h:body>
 </html>

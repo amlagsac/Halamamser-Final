@@ -4,145 +4,119 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-<!--<f:view>
-    <h:outputLabel value="Hello, world"/>
-</f:view>-->
 
-<h:head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <h:head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-    <title>Halamamser</title>
-    <link rel="icon" href="resources/image/leaf.png" type="image/icon type"/>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <title>Halamamser</title>
+        <link rel="icon" href="resources/image/leaf.png" type="image/icon type"/>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'/>
-    <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
-</h:head>
+        <link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'/>
+        <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
+    </h:head>
 
-<body>
-<!-- start navbar -->
-<nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="#">
-        <img src="resources/image/leaf.png" width="30" height="30" id="logo"/>
-    </a>
-    <div>
-        <p id="hala">HALAMAMSER</p>
-        <p id="pnp">Plants and potery</p>
-    </div>
-
-    <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-        <img src="resources/image/list.png" style="max-width: 15px;"/>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="homepage.xhtml">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cart.xhtml">Cart</a>
-            </li>
-
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        <div class="ml-1">
-            <a href="admin/adminPage.xhtml" class="btn btn-dark my-sm-0 " role="button" >Go to Admin
+    <h:body>
+    <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="homepage.xhtml">
+                <img src="resources/image/leaf.png" width="30" height="30" id="logo"/>
             </a>
-        </div>
-    </div>
-</nav>
-
-<div class="container-fluid">
-    <div class="row container-fluid" id="plantsTitle">
-        <h1>Shopping Cart</h1>
-    </div>
-
-    <div class="row" id="items">
-        <!-- items holder -->
-        <div class="col-md-8 card">
-            <h6 id="total1">Total number of items: </h6>
-            <!--start: dito ka mag edit ANDRE SA PRODUCTS-->
-            <div class="row">
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>Product name</th>
-                        <th>Product price</th>
-                    </tr>
-                    </thead>
-                    <ui:repeat value="#{cartFormBeam.items_Cart}" var="item">
-                        <tbody>
-                        <tr>
-                            <td><h:outputText value="#{item.name}" /></td>
-                            <td>₱<h:outputText value="#{item.price}" /></td>
-                        </tr>
-                        </tbody>
-                    </ui:repeat>
-                </table>
-<!--                <div class="col-md-4">&lt;!&ndash; for quantity and amount &ndash;&gt;-->
-<!--                    <form action="/" id="quantityBox">-->
-<!--                        <label for="quantity">Quantity</label>-->
-<!--                        <input type="number" name="quantity" class="form-control" id="quantity" value="1" disabled="disabled"/>-->
-<!--                    </form>-->
-<!--                </div>-->
+            <div>
+                <p id="hala"><h:outputText value="HALAMAMSER" /></p>
+                <p id="pnp"><h:outputText value="Plants and potery" /></p>
             </div>
-            <!--start: dito ka mag edit ANDRE SA PRODUCTS-->
-
-        </div>
-        <!-- items holder end -->
-        <!-- amount summary -->
-        <div class="col-md-4 card" style="align-content: flex-start;">
-            <div class="row">
-                <div class="col-8">
-                    <h6 id="total2">Amount Summary </h6>
-                    <br/>
-                    <h6>Amount</h6>
-                    <h6>Shipping</h6>
-                    <hr/>
-                    <h6 id="total3">Total amount (including VAT)</h6>
-                </div>
-                <div class="col-4" id="peso">
-                    <br/><br/>
-                    <h6>₱<h:outputText value="#{cartFormBeam.total}" /></h6>
-                    <h6><h:outputText value="₱ 50" /></h6>
-                    <hr/>
-                    <h6 id="total">₱<h:outputText value="#{cartFormBeam.total2}" /></h6>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <img src="resources/image/list.png" style="max-width: 15px;"/>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.xhtml">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.xhtml">Cart</a>
+                    </li>
+                </ul>
+                <h:form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+                </h:form>
+                <div class="ml-1">
+                    <a href="admin/adminPage.xhtml" class="btn btn-dark my-sm-0 " role="button" >Go to Admin
+                    </a>
                 </div>
             </div>
-
-            <div class="row" style="margin-left: 250px; margin-top: 50px">
-                <a href="ship.xhtml" class="btn btn-dark my-sm-0 " role="button" >Continue to shipping ->
-                </a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row container-fluid" id="plantsTitle">
+                <h1>Shopping Cart</h1>
             </div>
-
-
+            <div class="row" id="items">
+                <!-- items holder -->
+                <div class="col-md-8 card">
+                    <h6 id="total1"><h:outputText value="Total number of items: " /></h6>
+                    <div class="row">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th><h:outputText value="Product name" /></th>
+                                <th><h:outputText value="Product price " /></th>
+                            </tr>
+                            </thead>
+                            <ui:repeat value="#{cartFormBeam.items_Cart}" var="item">
+                                <tbody>
+                                <tr>
+                                    <td><h:outputText value="#{item.name}" /></td>
+                                    <td>₱<h:outputText value="#{item.price}" /></td>
+                                </tr>
+                                </tbody>
+                            </ui:repeat>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 card" style="align-content: flex-start;">
+                    <div class="row">
+                        <div class="col-8">
+                            <h6 id="total2"><h:outputText value="Amount Summary" /></h6>
+                            <br/>
+                            <h6><h:outputText value="Amount" /></h6>
+                            <h6><h:outputText value="Shipping" /></h6>
+                            <hr/>
+                            <h6 id="total3"><h:outputText value="Total amount (including VAT)" /></h6>
+                        </div>
+                        <div class="col-4" id="peso">
+                            <br/><br/>
+                            <h6>₱<h:outputText value="#{cartFormBeam.total}" /></h6>
+                            <h6><h:outputText value="₱ 50" /></h6>
+                            <hr/>
+                            <h6 id="total">₱<h:outputText value="#{cartFormBeam.total2}" /></h6>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 250px; margin-top: 50px">
+                        <a href="ship.xhtml" class="btn btn-dark my-sm-0 " role="button" >Continue to shipping ->
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- amount summary end -->
-    </div>
-
-</div>
-
-</body>
-
+    </h:body>
 </html>
